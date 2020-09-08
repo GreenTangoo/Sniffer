@@ -32,8 +32,6 @@ static unsigned short sniffPort = 0;
 static char interfaceName[INTERFACE_NAME_LEN] = { 0, };
 static char ipAddrStr[IP_ADDR_STR_LEN] = { 0, };
 
-static pthread_mutex_t logInteractMut;
-
 int snf_start_sniff(char const *interfaceNameStr, unsigned short listenPort)
 {
     sniffPort = listenPort;
